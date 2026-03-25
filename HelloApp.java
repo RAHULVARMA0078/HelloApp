@@ -1,5 +1,11 @@
-public class HelloApp {
+public class HelloWorldApp {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        String name = "World";  // default
+
+        if (args.length > 0) {
+            name = args[0];
+        }
+
+        System.out.println("Hello, " + name + "!");
     }
 }
